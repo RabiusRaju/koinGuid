@@ -14,7 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //car.getCar()
-        component.car.getCar()
-        component.main.getDemo()
+        //component.car.getCar()
+        //component.main.getDemo()
+        component.mainViewModel.getTest()
     }
 }
