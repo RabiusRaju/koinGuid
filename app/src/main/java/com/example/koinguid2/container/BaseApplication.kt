@@ -5,6 +5,7 @@ import com.example.koinguid2.RetrofitTY.retrofitBuilderModule
 import com.example.koinguid2.di.demoModule
 import com.example.koinguid2.di.interfaceModule
 import com.example.koinguid2.di.viewModelModel
+import com.example.koinguid2.roomYT.di.userDatabaseModule
 import org.koin.core.context.startKoin
 
 class BaseApplication : Application() {
@@ -12,7 +13,7 @@ class BaseApplication : Application() {
         super.onCreate()
 
         startKoin {
-            modules(demoModule, interfaceModule,viewModelModel,retrofitBuilderModule)
+            modules(demoModule, interfaceModule,viewModelModel,retrofitBuilderModule,userDatabaseModule)
         }
     }
 }
