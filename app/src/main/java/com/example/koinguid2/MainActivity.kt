@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         //car.getCar()
         //component.car.getCar()
         //component.main.getDemo()
-        component.mainViewModel.getTest()
+        //component.mainViewModel.getTest()
+        component.user.getUser()
 
 
     }

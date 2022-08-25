@@ -1,5 +1,6 @@
 package com.example.koinguid2.container
 
+import com.example.koinguid2.Qualifier.Users
 import com.example.koinguid2.RetrofitTY.RetrofitViewModel
 import com.example.koinguid2.demo.Car
 import com.example.koinguid2.demo.interfaces.Main
@@ -22,4 +23,6 @@ class Component : KoinComponent {
     val mainViewModel : MainViewModel by inject()
 
     val retrofitViewModel : RetrofitViewModel by inject()
+
+    val user : Users by inject()
 }

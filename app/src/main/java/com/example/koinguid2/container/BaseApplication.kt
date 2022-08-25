@@ -1,6 +1,7 @@
 package com.example.koinguid2.container
 
 import android.app.Application
+import com.example.koinguid2.Qualifier.usersModule
 import com.example.koinguid2.RetrofitTY.retrofitBuilderModule
 import com.example.koinguid2.di.demoModule
 import com.example.koinguid2.di.interfaceModule
@@ -13,7 +14,7 @@ class BaseApplication : Application() {
         super.onCreate()
 
         startKoin {
-            modules(demoModule, interfaceModule,viewModelModel,retrofitBuilderModule,userDatabaseModule)
+            modules(demoModule, interfaceModule,viewModelModel,retrofitBuilderModule,userDatabaseModule,usersModule)
         }
     }
 }
